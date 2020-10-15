@@ -6,7 +6,7 @@ use \core\Controller;
 class UsuarioController extends Controller {
 
     public function index() {
-        $this->render('usuarios/listar', ['nome' => 'Bonieky']);
+        $this->render('usuarios/listar');
     }
 
     public function add() {
