@@ -3,23 +3,25 @@ namespace src\controllers;
 
 use \core\Controller;
 
-class HomeController extends Controller {
+class LoginController extends Controller {
 
     private $loggerUser;
 
     public function __construct()
     {
-        $this->redirect('/login');
+
     }
 
-    public function index() 
+    public function signin() 
     {
-        $this->render('home');
+        echo 'Login';
+        /* $this->render('home'); */
     }
 
-    public function sobre() 
+    public function signup() 
     {
-        $this->render('sobre');
+        echo 'Cadastro';
+        /* $this->render('sobre'); */
     }
 
     public function sobreP($args) 
